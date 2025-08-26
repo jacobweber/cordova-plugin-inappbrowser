@@ -48,9 +48,7 @@ public class InAppChromeClient extends WebChromeClient {
     }
     
     public void onPermissionRequest(final PermissionRequest request) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            request.deny();
-        }
+        request.deny();
     }
 
     /**
